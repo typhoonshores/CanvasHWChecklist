@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "CanvasHWChecklist",
+  "description": "Armands first Chrome App.",
+  "version": "0.01",
+  "icons": { "16": "icon1.png", "128": "icon2.png"},
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "activeTab"
+ ],
+  "background": {
+    "scripts": ["popup.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://canvas.uw.edu/courses/1323884/assignments"
+      ],
+      "js": ["jquery-3.4.1.min.js", "popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon1.png",
+    "default_popup": "popup.html"
+  }
+}
