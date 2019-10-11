@@ -1,7 +1,7 @@
 //var assignments = document.getElementsByClassName("ig-title");
 // Problem: User interaction doesn't provide desired results.
 // Solution: Add interactivity so the user can manage daily tasks
-
+//lol this is so lame
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
 var incompleteTasksHolder = document.getElementById("incomplete-tasks");
